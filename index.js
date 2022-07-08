@@ -1,14 +1,19 @@
-const page=(
-   <div>
-       <h1>My awesome website in React </h1>
-       <h3>Reasons I love React</h3>
-       <ol>
-           <li>It is composable</li>
-           <li>It is declarative</li>
-           <li>It is hireable skills</li>
-           <li>It is actively maintained by skilled people</li>
-       </ol>
-   </div> 
+// import react from 'react'
+// import ReactDOM from 'react-dom'
+
+const page = (
+<div>
+    <img src="./react-2.svg" width="40px"/>
+    <h1>Fun facts about React </h1>
+    <ul>
+        <li>Was first released in 2013</li>
+        <li>Was originally created by Jordan walker</li>
+        <li>Has well over 100k stars on Github</li>
+        <li>Is maintained by Facebook</li>
+        <li>Powers thousands of enterprise apps,including mobile apps</li>
+        <li>Powers thousands of enterprise apps,  including mobile apps</li>
+    </ul>
+</div>
 )
 
-document.getElementById("root").append(JSON.stringify(page))
+ReactDOM.render(page, document.getElementById('root'))
