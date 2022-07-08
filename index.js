@@ -1,5 +1,14 @@
 
+function MainComponent(){
+    return(
+        <h1>I'm learning REACT</h1>
+    )
+    
+}
+
 ReactDOM.render(
-<ul><li>Thing 1</li> <li>Thing 2</li></ul>,
-document.getElementById("root")
+    <div>
+        <MainComponent />
+    </div>,
+    document.getElementById("root")
 )
