@@ -1,13 +1,14 @@
-const navbar=(<div>
-    <nav>
-        <h1>Placide's website</h1>
-        <ul>
-            <li>Pricing</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
-    </div>)
-ReactDOM.render(
-navbar,
-document.getElementById("root"))
+const page=(
+   <div>
+       <h1>My awesome website in React </h1>
+       <h3>Reasons I love React</h3>
+       <ol>
+           <li>It is composable</li>
+           <li>It is declarative</li>
+           <li>It is hireable skills</li>
+           <li>It is actively maintained by skilled people</li>
+       </ol>
+   </div> 
+)
+
+document.getElementById("root").append(JSON.stringify(page))
