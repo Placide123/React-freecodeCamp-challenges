@@ -1,4 +1,24 @@
 html,body{
-    margin:0;
+    margin:20px;
     padding:0;
+}
+
+.nav{
+    display: flex;
+justify-content:space-between;
+align-items:center;
+box-shadow: 0x 10px ;
+}
+.nav-items{
+display: flex;
+list-style: none;
+}
+.nav-items >li{
+    padding:10px
+}
+.nav-logo{
+    width:60px
+}
+.footer{
+    background-color: darkgray;
 }

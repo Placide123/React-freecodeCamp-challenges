@@ -2,18 +2,22 @@
 function Header(){
     return(
         <header>
-        <nav>
-            <img src="react-2.svg" width="50px"></img>
+        <nav className="nav">
+            <img src="react-2.svg" className="nav-logo"></img>
+            <ul className="nav-items">
+                <li>Pricing</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
         </nav>
     </header>
     )
 }
 function Footer(){
     return(
-        <footer>
+    <footer className="footer">
         <small>&copy;2022 Placide development. All rights reserved.</small>
     </footer>
-
     )
 }
 function MainContent(){
@@ -39,5 +43,4 @@ function Page(){
 
     )
 }
-
 ReactDOM.render(<Page />, document.getElementById('root'))
