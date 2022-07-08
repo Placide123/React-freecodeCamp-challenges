@@ -1,14 +1,13 @@
-const page = (
-<div>
-        <h1 className="header">
-            This is JSX
-        </h1>
-        <p>This is a paragraph</p>
-    </div>
-)
-console.log(page)
-
+const navbar=(<div>
+    <nav>
+        <h1>Placide's website</h1>
+        <ul>
+            <li>Pricing</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    </div>)
 ReactDOM.render(
-    page,
-    document.getElementById("root")
-)
+navbar,
+document.getElementById("root"))
