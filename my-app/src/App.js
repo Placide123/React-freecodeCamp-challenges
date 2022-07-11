@@ -1,17 +1,36 @@
 
 import './App.css';
-import Information from './components/information';
-import About from './components/about';
-import Interests from './components/Interests';
-import Footer from './components/Footer';
-
+import NavBar from './components/NavBar.js'
+import Hero from './components/Hero.js'
+import Card from './components/Card.js'
+import data from './data'
 function App() {
+  
+  const cards = data.map(item => {
+    return (
+      <Card 
+      key={item.id}
+      {...item}
+
+      // img={item.coverImg}
+      // ratings={item.stats.rating}
+      // reviewCount={item.stats.reviewCount}
+      // location={item.location}
+      // title={item.title}
+      // price={item.price}
+      // openSpots={item.openSpots}
+       />
+    )
+  })
   return (
     <div className="container">
-     <Information />
-     <About />
-     <Interests/>
-     <Footer/>
+      <NavBar/>
+      <Hero />
+      <section className="cards--list">
+      {cards}
+      </section>
+
+    
     </div>
   );
 }
