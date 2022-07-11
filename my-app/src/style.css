@@ -1,89 +1,85 @@
 *{
     box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
+  
 }
 body {
     margin: 0; 
     font-family:'Poppins',sans-serif; 
 }
 nav{
-    height: 70px;
+    height: 40px;
     display: flex;
     padding:20px 36px;
-    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+    background-color: #F55A5A;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
 }
-.gray{
-  color:#918E9B;  
+.nav-text{
+color: #ffffff;
+font-size:13px;
+font-weight: bold;
 }
-.bold{
-    font-weight: bold;
-}
-
 .nav--logo{
-    max-width: 100px;
+    max-width: 30px;
+    margin-right: 12px;
+    font-size: 10px;
+    
 }
-section {
-    padding:20px;
-}
-.hero{
-    display:flex;
-    flex-direction:column;
-}
-.hero--photo{
-    max-width:400px;
-    align-self:center;
-}
-.hero--header{
-    margin-bottom:16px;
-}
-.hero--text{
-    margin-top:0;
-    width: 320px;
-height: 56px;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 300;
-font-size: 16px;
-line-height: 110%;
-}
-.cards--list{
-    display: flex;
-    flex-wrap: nowrap;
-    gap:20px;
-    overflow-x: auto;
-}
-
 .card{
-    width:175px;
-    font-size:12px;
-    flex: 0 0 auto;
-    display: flex;
-    flex-direction: column;
-    position: relative;
+    display:flex;
+    width: 100%;    
+    height: 24vh;
+    margin-top:20px;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.05);
+}
+.card--section1{
+    margin-right: 19px;
+    width: 126px;
+    margin-left:40px;
+
 }
 .card--image{
     width:100%;
-    height:50vh;
-    border-radius:9px;
-    margin-top:9px;
-}
+    height:23vh;
+    border-radius:5px;
 
-.card--title{
-  overflow: hidden;
-  text-overflow: ellipsis;    
+      
 }
-.card--stats{
-    display:flex;
-    align-items:center;
+.card--section2{
+  width:  326px;
+  height: 18vh;
+  margin-right:40px;
 }
-.card--star{
-    height:14px;
+.card--location{
+    display: flex;
 }
-.card--badge{
-    position: absolute;
-    top: 18px;
-    left: 6px;
-    background-color:white;
-    padding:5px 5px;
-    border-radius:2px;
+.card--city{
+    font-size:16px;
+}
+.card--date{
+    font-size:10.24px;
     font-weight:bold;
+}
+.card--description{
+    font-size:10.24px;
+}
+.card--icon{
+    max-width: 11px;
+    height:11px;
+    margin-top:11px;
+}
+.card--country{
+    font-size:10.24px;
+    margin-right: 10px;
+}
+.gray{
+    font-size:10.24px;
+    color:#918E9B;
+    margin-top:10px;
+}
+.card--container{
+    margin: auto;
 }

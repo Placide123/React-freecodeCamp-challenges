@@ -1,25 +1,26 @@
 import React from 'react';
-import star from '../assets/images/star.png'
+import location from '../assets/images/location.png'
+import wedding from '../assets/images/wedding.jpeg'
 export default function Card(props){
     console.log(props)
-    let badgeText 
-    if(props.openSpots===0){
-        badgeText = 'SOLD OUT'
-    }else if(props.location ==="Online"){
-        badgeText = "Online"
-    }
     return(
     <div className="card">
-            {badgeText && <div className="card--badge">{badgeText}</div>}
-            <img src={props.coverImg} alt="katie" className='card--image'/>
-            <div className="card--stats">
-                <img src={star} alt="star" className='card--star'/>
-                <span>{props.stats.rating}</span>
-                <span className="gray">({props.stats.reviewCount}) • </span>
-                <span className="gray">{props.location}</span>
-            </div>
-            <p> {props.title}</p>
-            <p><span className="bold">From ${props.price}</span> / person</p>
+        <section className="card--section1">
+            <img src={props.imageUrl} alt='location' className='card--image'/>
+        </section>
+        <section className="card--section2">
+        <div className="card--location">
+             <img src={location} alt="location" className='card--icon'/>
+            <p className="card--country">{props.location}</p>
+            <a href={props.googleMapsUrl} className="gray"> View on Google Maps</a>
+        </div> 
+        <div>
+            <h2 className="card--city">{props.title}</h2>
+            <h4 className="card--date">{props.startDAte} - {props.endDAte}</h4>
+            <p className="card--description">{props.description}</p>
+
+        </div>
+        </section>    
 
     </div>
     )
