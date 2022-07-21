@@ -1,13 +1,19 @@
-const Joke = (props)=>{
-    console.log(props.isPun)
+const Joke = ()=>{
+   const thingsArray=["Thing 1", "Thing 2"]
+
+   const thingsElements = thingsArray.map(thing=><p key={thing}>{thing}</p>)
+   function addItem(){
+       const newThingText=`Thing ${thingsArray.length+1}`
+       thingsArray.push(newThingText)
+       console.log(thingsArray)
+   }
     return(
-       <div>
-       {props.Setup && <h3>Setup: {props.Setup}</h3>}   
-       <p>Punchline: {props.Punchline}</p>  
-       {props.isPun &&<h4>isPun: {`${props.isPun}`}</h4>}
-       <h5>upvotes: {props.upvotes}</h5>
-       <hr/>
+       <div className="bod">
+      
+      <button onClick={addItem} >Add item</button>
+      {thingsElements}
        </div>
+       
     )
 }
 export default Joke ;
